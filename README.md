@@ -21,3 +21,17 @@ In order to earn extra point, we also implement a simple Chinese-to-English tran
 
 **Performance**
 ---
+-  **result of lstm model**   
+
+![image text](https://github.com/milinzhang/simple-seq2seq-chatbot/blob/master/image/bot_lstm.png)  
+
+-  **result of gru model**  
+
+![image text](https://github.com/milinzhang/simple-seq2seq-chatbot/blob/master/image/bot_gru.png)
+
+-  **result of attention model**  
+
+
+-  **result of translator**
+
+![image text](https://github.com/milinzhang/simple-seq2seq-chatbot/blob/master/image/translator.png)
