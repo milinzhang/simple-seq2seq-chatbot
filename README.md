@@ -1,7 +1,7 @@
 # simple-seq2seq-chatbot
 **Introduction**
 ---
-This is our final project for CSE691 MIDL 20spring. We build a simple seq2seq chatbot based on tensorflow 2, using the [cornell movie dialog corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html). Our code is basically refered to the [keras example](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html) and the [tensorflow tutorial](https://www.tensorflow.org/tutorials/text/nmt_with_attention).   
+This is our final project for CSE691 MIDL 20spring. We build a simple seq2seq chatbot based on tensorflow 2, using the [cornell movie dialog corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html). Our code is basically refered to the [keras example](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html) and the [tensorflow tutorial](https://www.tensorflow.org/tutorials/text/nmt_with_attention). We have implemented 3 different version, the basic lstm model, basic gru model and gru model with attention mechanism and compared their performance.   
 In order to earn extra point, we also implement a simple Chinese-to-English translator using our model. The corpus comes from [here](https://github.com/pjgao/seq2seq_keras) 
 
 **Enviroment**
