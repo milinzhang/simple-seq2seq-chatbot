@@ -34,4 +34,15 @@ In order to earn extra point, we also implement a simple Chinese-to-English tran
 
 -  **result of translator**
 
-![image text](https://github.com/milinzhang/simple-seq2seq-chatbot/blob/master/image/translator.png)
+![image text](https://github.com/milinzhang/simple-seq2seq-chatbot/blob/master/image/translator.png)  
+
+**Inprovement**
+---
+-  1.train on different dataset  
+    We use a small dataset only containing short sentences in cornell movie dialog corpus. Training model on a larger dataset is beneficial to improve the performance of the bot. Also, the cornell movie dialog contains lots of dramatic conversations since playwriters need to promote the plot. Using other corpus can make the bot more realistic.  
+
+-  2.non-greedy prediction  
+    In our code, we use a argmax function to generate the most potential word at each timestep during the prediction. But the greedy prediction may be not the optimal one. So, the performance can be improved by making use of beam search algorithm.  
+    
+-  3.sparse-categorical-crossentropy  
+    In the gru and lstm model, we use categorical crossentropy to train, which expect labels to be one-hot encoding. But with the vocabulary size increased, the memory requirement will be enormous. In order to avoid the oom issue we only use a small batchsize and this will slow down the training. You can use sparse categorical crossentropy to solve this problem, just like what we do in the attention model.
