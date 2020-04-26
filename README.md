@@ -46,3 +46,6 @@ In order to earn extra point, we also implement a simple Chinese-to-English tran
     
 -  3.sparse-categorical-crossentropy  
     In the gru and lstm model, we use categorical crossentropy to train, which expect labels to be one-hot encoding. But with the vocabulary size increased, the memory requirement will be enormous. In order to avoid the oom issue we only use a small batchsize and this will slow down the training. You can use sparse categorical crossentropy to solve this problem, just like what we do in the attention model.
+
+-  4.word-level translator  
+    In our code we use a character-level model and its performance is limited. Use a word-level model is more general.
