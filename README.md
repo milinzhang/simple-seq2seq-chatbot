@@ -12,8 +12,7 @@ In order to earn extra point, we also implement a simple Chinese-to-English tran
 
 **Usage of Our Code**
 ---
--  **If you want to chat with our bot**: run 'bot_gru'(or 'bot_lstm')
--  **If you want to train your own bot**:   
+-  **If you want to use our chatbot**:   
     1. **Run 'datapreprocessing'**: You can define the length of your own training data. We only use some short sentences(2 to 8 words) and a small vocabulary size(2500 words) to test our code.  
     2. **Run 'gru_training_model' (or 'lstm_training_model') to train the model**: If you modified the training data in 'datapreprocessing', some details in the training model file should also be adjusted. Also, our model is a prelimilary version, you can modify it by yourself to improve the performance. 
     3. **Run 'bot_gru'(or 'bot_lstm')**: If you modified the training model, don't forget to modify code at here. Again, we use the greedy algorithm to predict the answer of the bot at here. You can improve the output by using beam search decoder.
